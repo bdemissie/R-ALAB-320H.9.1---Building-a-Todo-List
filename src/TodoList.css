@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.todo-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h1 {
+  text-align: center;
+}
+
+.todo-list div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-list input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.todo-list button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+}
+
+.todo-list li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-list li span {
+  flex-grow: 1;
+}
+
+.todo-list li div {
+  display: flex;
+}
+
+.todo-list li div button {
+  background-color: #28a745;
+}
+
+.todo-list li div button:first-child {
+  margin-left: 0; /* Remove margin for the first button */
+}
+
+.todo-list li div button:hover {
+  background-color: #218838;
+}
+
+.todo-list li div button.delete {
+  background-color: #dc3545;
+}
+
+.todo-list li div button.delete:hover {
+  background-color: #c82333;
+}
+
+.delete-button {
+  margin-left: 10px;
+}
